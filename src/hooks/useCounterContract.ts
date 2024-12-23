@@ -4,6 +4,7 @@ import { useTonClient } from './useTonClient';
 import { useAsyncInitialize } from './useAsyncInitialize';
 import { useTonConnect } from './useTonConnect';
 import { Address, OpenedContract } from '@ton/core';
+import { contractAddress } from '../config';
 
 export function useCounterContract() {
   const client = useTonClient();
@@ -15,7 +16,7 @@ export function useCounterContract() {
   const counterContract = useAsyncInitialize(async () => {
     if (!client) return;
     const contract = new Counter(
-      Address.parse('EQDKM1WlCEC178OHic-vMnvtJbBRUUQyMuXNY1It_jDaKN7H') // replace with your address from tutorial 2 step 8
+      Address.parse(contractAddress) // replace with your address from tutorial 2 step 8
     );
     return client.open(contract) as OpenedContract<Counter>;
   }, [client]);

@@ -6,7 +6,7 @@ import { TonConnectUIProvider } from '@tonconnect/ui-react'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-     <TonConnectUIProvider manifestUrl="https://ton-connect.github.io/demo-dapp-with-react-ui/tonconnect-manifest.json">
+     <TonConnectUIProvider manifestUrl="https://tact-counter.vercel.app/tonconnect-manifest.json">
         <App />
     </TonConnectUIProvider>
   </StrictMode>,

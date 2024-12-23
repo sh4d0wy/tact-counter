@@ -1,0 +1,5 @@
+{
+    "url": "http://localhost:3000",
+    "name": "Ton counter with React",
+    "iconUrl": "http://localhost:3000/vite.svg"
+  }

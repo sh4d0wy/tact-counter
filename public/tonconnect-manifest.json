@@ -1,5 +1,5 @@
 {
-    "url": "http://localhost:3000",
+    "url": "https://tact-counter.vercel.app/",
     "name": "Ton counter with React",
-    "iconUrl": "http://localhost:3000/vite.svg"
+    "iconUrl": "https://tact-counter.vercel.app/"
   }
